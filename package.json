@@ -27,6 +27,7 @@
   "homepage": "https://github.com/rjcd95/rjcd95.github.io#readme",
   "dependencies": {
     "angular": "^1.5.7",
+    "angular-material": "^1.1.0-rc.5",
     "angular-route": "^1.5.7",
     "bootstrap": "^3.3.6"
   }

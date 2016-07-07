@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='portfolioPersonal'>
 <head>
 	<title>Rjcd95 Site</title>
-	<script src="/node_modules/angular/angular.min.js"></script>
-	<script src="/app/app.js"></script>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-route/angular-route.min.js"></script>
 </head>
-<body>
-
+<body ng-controller="mainController">
+	<header>
+   		<h1>Angular Routing</h1>
+		<nav> 
+			<ul> 
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#acerca">Acerca de</a></li>
+				<li><a href="#contacto">Contacto</a></li>         
+			</ul> 
+		</nav>
+    </header>
+    <div id="main">
+  		<div ng-view></div> 
+    </div>
+    <script src="app/app.js"></script>
 </body>
 </html>
